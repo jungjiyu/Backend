@@ -2,9 +2,9 @@
 - 기한 4.16까지
 
 <<게시판 API 설계>>
-!!!!api로만 설계 view 반환 X
-!!!! 반환 데이터는 무조건 json
-!!!! 요청 데이터는 자유 pathvariable , 쿼리파라미터 , formdata , ReqeustBody 자유
+- api로만 설계 view 반환 X
+-  반환 데이터는 무조건 json
+-  요청 데이터는 자유 pathvariable , 쿼리파라미터 , formdata , ReqeustBody 자유
 
 
 <게시판 Entity>

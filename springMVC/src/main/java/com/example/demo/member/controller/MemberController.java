@@ -44,12 +44,12 @@ public class MemberController {
     @PostMapping("/member")
     public String join( MemberVO member) {
 
-        boolean idCheck = service.memberPwCheck(member.getPw());
-        if(idCheck) { // 같은 아이디가 있는 경우
+        boolean pwCheck = service.memberPwCheck(member.getPw());
+        if(pwCheck) { // 같은 비밀번호가 있는 경우
             return "redirect:/";
         }
 
-        // 같은 아이디가 없는 경우
+        // 같은 비밀번호가 없는 경우
         boolean result = service.memberInsert(member);
         return "redirect:/member/list";
 
